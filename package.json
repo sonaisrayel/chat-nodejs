@@ -32,7 +32,7 @@
   "scripts": {
     "dev": "nodemon app.js",
     "fixpack": "fixpack",
-    "lint": "node_modules/eslint/bin/eslint.js . --fix",
+    "lint": "node_modules/eslint/bin/eslint.js app.js --fix",
     "precommit": "node_modules/eslint/bin/eslint.js ./",
     "start": "node app.js"
   }
