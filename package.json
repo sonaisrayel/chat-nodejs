@@ -1,0 +1,38 @@
+{
+  "name": "chat-nodejs",
+  "description": "real time chat app with nodejs",
+  "version": "1.0.0",
+  "author": "sonaisrayel",
+  "bugs": {
+    "url": "https://github.com/sonaisrayel/chat-nodejs/issues"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "socket.io": "^3.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^7.16.0",
+    "eslit": "^6.0.0",
+    "fixpack": "^3.0.6",
+    "nodemon": "^2.0.6",
+    "pre-commit": "^1.2.2"
+  },
+  "homepage": "https://github.com/sonaisrayel/chat-nodejs#readme",
+  "license": "MIT",
+  "main": "app.js",
+  "pre-commit": [
+    "precommit"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sonaisrayel/chat-nodejs.git"
+  },
+  "scripts": {
+    "dev": "nodemon app.js",
+    "fixpack": "fixpack",
+    "lint": "node_modules/eslint/bin/eslint.js . --fix",
+    "precommit": "node_modules/eslint/bin/eslint.js ./",
+    "start": "node app.js"
+  }
+}
