@@ -4,6 +4,10 @@ const express = require('express');
 const socketio = require('socket.io');
 const formatMessage = require('./utils/messages');
 
+const mongodb = require('./utils/mongodb');
+
+mongodb.init();
+
 const {
   userJoin,
   getCurrentUser,
@@ -22,7 +26,10 @@ const botName = 'Chat for developers';
 
 // Run when client connects
 io.on('connection', socket => {
-  socket.on('joinRoom', ({ username, room }) => {
+  socket.on('joinRoom', ({
+    username,
+    room
+  }) => {
     const user = userJoin(socket.id, username, room);
 
     socket.join(user.room);
