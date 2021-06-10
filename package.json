@@ -11,7 +11,7 @@
     "moment": "^2.29.1",
     "mongoose": "^5.12.13",
     "path": "^0.12.7",
-    "socket.io": "^3.0.4"
+    "socket.io": "^3.1.2"
   },
   "devDependencies": {
     "config": "^3.3.6",
